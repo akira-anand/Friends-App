@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   // @Input () usersFromHomeComponent: any;
   @Output() cancelRegister= new EventEmitter();
   model:any={};
-  constructor(private accountService:AccountService,private toastr:ToastrService,private formBuilder:FormBuilder) { }
+  constructor(private accountService:AccountService,private toastr:ToastrService) { }
 
   ngOnInit(): void {
   }

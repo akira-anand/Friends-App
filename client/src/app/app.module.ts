@@ -15,6 +15,8 @@ import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ErrorComponent } from './error/error.component';
 import { ToastrModule } from 'ngx-toastr';
+import { SharedModule } from './_modules/shared.module';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -28,7 +30,8 @@ import { ToastrModule } from 'ngx-toastr';
     MemberListsComponent,
     ListsComponent,
     MessagesComponent,
-    ErrorComponent
+    ErrorComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -36,12 +39,7 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot(),
-    ToastrModule.forRoot(
-      {
-        positionClass:'toast-bottom-right'
-      }
-    )
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
