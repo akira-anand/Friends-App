@@ -23,6 +23,9 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="" routerLinkActive="active"> I'm Intrested</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/errors" routerLinkActive="active"> Test Errors</a>
+          </li>
         </ul>
         <div href="#"  class="dropdown" *ngIf="(accountService.currentUser$|async) as user" dropdown>
           <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username | titlecase}}</a>
