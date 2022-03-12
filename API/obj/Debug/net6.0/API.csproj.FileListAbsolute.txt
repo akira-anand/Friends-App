@@ -58,3 +58,6 @@
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Data/UserSeedData.json
+/Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/AutoMapper.dll
+/Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
