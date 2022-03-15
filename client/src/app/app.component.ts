@@ -15,28 +15,28 @@ export class AppComponent implements OnInit {
   constructor(private http:HttpClient,public accountService:AccountService){}
   ngOnInit(){
     
-    this.getUsers();
+    // this.getUsers();
     this.setCurrentUser();
-    this.http.get('https://localhost:5001/api/users').subscribe(response=>
-    {
-      this.users=response;
-    },error=>{
-      console.log(error);
-    })
-  }
+  //   this.http.get('https://localhost:5001/api/users').subscribe(response=>
+  //   {
+  //     this.users=response;
+  //   },error=>{
+  //     console.log(error);
+  //   })
+   }
  
   setCurrentUser() {
   const user: User = JSON. parse(localStorage.getItem ( 'user') ) ;
   this.accountService.setCurrentUser(user);
 }
-getUsers(){
-  this.http.get('https://localhost:5001/api/users').subscribe(
-    response=>
-    {
-      this.users=response;
-    },error=>{
-      console.log(error);
-    }
-  )
-}
+// getUsers(){
+//   this.http.get('https://localhost:5001/api/users').subscribe(
+//     response=>
+//     {
+//       this.users=response;
+//     },error=>{
+//       console.log(error);
+//     }
+//   )
+// }
 }
