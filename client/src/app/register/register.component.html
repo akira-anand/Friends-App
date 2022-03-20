@@ -2,19 +2,26 @@
 <form [formGroup]="registerForm" (ngSubmit)="register()"autocomplete="off">
 
 <h2 class="text-center text-primary">Sign up</h2>
-<hr>
-<div class="form-group">
+<app-text-input [formControl]='registerForm.controls["username"]'
+[label]='"Username"'></app-text-input>
+<app-text-input [formControl]='registerForm.controls["password"]'
+[label]='"Password"' [type]='"password"'></app-text-input>
+
+<app-text-input [formControl]='registerForm.controls["confirmPassword"]'
+[label]='"Confirm Password"' [type]='"password"'></app-text-input>
+
+<!-- <div class="form-group"> -->
     <!-- <input type="text" class="form-control" 
 name="username" [(ngModel)]="model.username" -->
-<input [class.is-invalid]='registerForm.get("username").errors
+<!-- <input [class.is-invalid]='registerForm.get("username").errors
 && registerForm.get ("username").touched'
 type="text"
  class="form-control" 
 name="username" 
 formControlName="username"
  placeholder="Username"  >
- <div class="invalid-feedback">Please enter a username</div>
-</div>
+ <div class="invalid-feedback">Please enter a username</div> -->
+
 <!-- <div class="form-group">
     <label>Who is your favourite user?</label>
     <select class="form-control">
@@ -27,7 +34,7 @@ formControlName="username"
 
 <div class="form-group">
 <!-- <input type="password" class="form-control" name="password" [(ngModel)]="model.password" placeholder="Password"> -->
-<input 
+<!-- <input 
 [class.is-invalid]='registerForm.get("password").errors
 && registerForm.get ("password").touched'
 type="password" class="form-control" formControlName="password" placeholder="Password">
@@ -44,7 +51,8 @@ class="form-control" formControlName="confirmPassword" placeholder="Confirm Pass
 <div *ngIf="registerForm.get('confirmPassword' ).hasError('required')"
 class="invalid-feedback">Please enter a confirm password</div>
 <div *ngIf="registerForm.get('confirmPassword').hasError('isMatching')"
-class="invalid-feedback">Confirm password must match password</div>
+class="invalid-feedback">Confirm password must match password</div> -->
+
 </div>
 
 <div class="form-group text-center">
