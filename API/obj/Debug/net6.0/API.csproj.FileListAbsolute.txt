@@ -63,3 +63,4 @@
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/CloudinaryDotNet.dll
 /Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Volumes/Developers Space/Dotnetcore_Projects/Friends App/API/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

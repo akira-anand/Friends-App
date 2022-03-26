@@ -27,6 +27,11 @@ import { PhotoEditComponent } from './members/photo-edit/photo-edit.component';
 import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { DateInputComponent } from './_forms/date-input/date-input.component';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { HasRoleDirective } from './_directives/has-role.directive';
+import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
+import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
+import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
+import { UserManagementComponent } from './admin/user-management/user-management.component';
 
 
 @NgModule({
@@ -49,6 +54,11 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
     TextInputComponent,
     DateInputComponent,
     MemberMessagesComponent,
+    HasRoleDirective,
+    RolesModalComponent,
+    AdminPanelComponent,
+    PhotoManagementComponent,
+    UserManagementComponent,
   ],
   imports: [
     BrowserModule,

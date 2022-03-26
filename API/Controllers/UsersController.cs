@@ -38,7 +38,7 @@ namespace API.Controllers
             _mapper = mapper;
             _userRepository = userRepository;
         }
-
+        //[Authorize(Roles ="Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
         {
@@ -49,6 +49,7 @@ namespace API.Controllers
             Response.AddPaginationHeader(users.CurrentPage,users.PageSize,users.TotalCount,users.TotalPages);
             return Ok(users);
         }
+        // [Authorize(Roles ="Member")]
 
         [HttpGet("{username}", Name = "GetUser")]
         public async Task<ActionResult<MemberDto>> GetUser(string username)
@@ -66,6 +67,7 @@ namespace API.Controllers
         // {
         //     return View("Error!");
         // }
+
         [HttpPut]
         public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
         {
