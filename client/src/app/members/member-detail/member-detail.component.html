@@ -3,6 +3,11 @@
         <div class="card">
             <img src="{{member?.photoUrl || './assets/user.png'}}" alt="{{member.knownAs}}" 
                 class="card-img-top img-thumbnail">
+                <div class="card-body">
+                    <div class="mb-2" *ngIf="(presence.onlineUsers$|async).includes(member.userName)">
+                           <i class="fa fa-user-circle text-sucess"></i>Online now 
+                    </div>
+                </div>
             <div class="card-body">
                 <div>
                     <strong>Location:</strong>
